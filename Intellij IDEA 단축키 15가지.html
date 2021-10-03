@@ -1,171 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>2017108252 권영기</title>
-    <style>
-        body
-        {
-            background-color: seashell;
-        }
-    </style>
+    <link rel="stylesheet" href="style/main.css">
 </head>
+
+
 <body>
-<div style="text-align:center">
-    <h2>
-        Intellij IDEA 단축키 15가지
-    </h2>
-    <br>
-    <h3>
-         Alt + Enter
-    </h3>
-    <h5>
-        1. Alt+ Enter 키보드 단축키를 사용하면 무엇이든 수정할 수 있습니다
-        <br>
-        2. 오류가 발견된 경우 해당 오류 위에 커서를 놓고 Alt+ Enter를 누르면 문제에 대한 수정 제안 목록이 표시됩니다
-        <br>
-        3. 경고 및 제안이 표시되는 곳에서도 사용 가능합니다
-        <br>
-        4. 오류, 경고 제안이 없는 코드에서도 활용하여 보다 더 간결한 코드를 만들 수 있습니다
-        <br>
-        5. 경고 및 제안이 표시되는 곳에서도 사용 가능합니다
-    </h5>
-    <hr>
-    <h3>
-        F2
-    </h3>
-    <h5>
-        1. F2를 활용해 손쉽게 다음 오류, 경고, 제안으로 이동할 수 있습니다
-    </h5>
-    <hr>
-    <h3>
-        Cmd+1(mac), Alt+1(win)
-    </h3>
-    <h5>
-        1. 프로젝트 창을 열 수 있습니다
-        <br>
-        2. 방향키를 사용해 트리를 탐색하고, 타이핑을 하여 검색할 수 있습니다
-        <br>
-        3. Esc를 누르면 에디터로 돌아올 수 있습니다
-    </h5>
-    <hr>
-    <h3>
-        ESC
-    </h3>
-    <h5>
-        1. 변경 사항을 적용하지 않고 모든 팝업을 닫습니다
-    </h5>
-    <hr>
-    <h3>
-    Cmd+E(mac), Ctrl+E(win)
-    </h3>
-    <h5>
-        1. 최근 파일 대화상자가 열려 방향키로 파일을 탐색할 수 있습니다
-        <br>
-        2. 최근 파일 대화상자에서 도구 창을 열 수도 있으며 키워드 입력을 통해 특정 항목을 검색할 수 있습니다
-    </h5>
-    <hr>
-    <h3>
-        Cmd+B(mac), Ctrl+B(win)
-    </h3>
-    <h5>
-        1. 심볼의 선언으로 이동할 수 있습니다
-        <br>
-        2. Alt를 같이 누르면 구현을 탐색하는 것도 가능합니다
-    </h5>
-    <hr>
-    <h3>
-       Alt + F7
-    </h3>
-    <h5>
-        1. 해당 변수명의 모든 사용 위치가 검색창에 표시됩니다
-    </h5>
-    <hr>
-    <h3>
-       Tap Ctrl Twice
-    </h3>
-    <h5>
-        1. IDE에서 어떤 위치에 있든, 어떤 파일이 열려 있든 Ctrl을 두 번 누르면 Run Anything 창이 열립니다
-        <br>
-        2. Run Anything 창은 최근 실행한 실행 구성 목록이 표시되고 실행할 항목의 이름을 입력하여 다른 실행 구성을 검색할 수 있습니다
-    </h5>
-    <hr>
-    <h3>
-        Alt+ 위/아래 방향키(mac), Ctrl+W, Ctrl+Shift+W(win)
-    </h3>
-    <h5>
-        1. 커서 주변의 코드 섹션을 확장하거나 축소할 수 있습니다
-        <br>
-        2. 선택 영역 확장을 사용하여 확장된 섹션의 유효한 표현식을 자동으로 선택합니다
-        <br>
-        3. 유효한 Java 블록을 통해 선택 영역이 축소되어 커서로 돌아옵니다
-    </h5>
-    <hr>
-    <h3>
-        Cmd+/(mac), Ctrl+/(win)
-    </h3>
-    <h5>
-        1. 줄 어디서든 코드를 간편하게 줄 주석으로 처리됩니다
-        <br>
-        2. 이미 주석 처리된 줄에서 같은 단축키를 다시 누르면 주석 처리가 해제됩니다
-        <br>
-        3. 전체 블록을 선택한 경우 Alt+Cmd+/ 또는 Shift+Ctrl+/를 눌러 블록 주석을 추가할 수 있습니다
-    </h5>
-    <hr>
-    <h3>
-        Shift+Cmd+Enter(mac), Shift+Ctrl+Enter(win)
-    </h3>
-    <h5>
-        1. 세미콜론을 추가하거나 for문, if문에 구문을 완성시킵니다
-        <br>
-        2. 커서가 그 다음 필요한 위치로 올바르게 배치됩니다
-    </h5>
-    <hr>
-    <h3>
-        Alt+Cmd+L(mac), Ctrl+Alt+L(win)
-    </h3>
-    <h5>
-        1.현재 파일의 서식을 프로젝트 표준에 맞출 수 있습니다
-        <br>
-        2. Alt+Shift+Cmd+L(mac), Shift+Ctrl+Alt+L(win)을 눌러 옵션을 선택해 서식을 지정할 수 있습니다
-    </h5>
-    <hr>
-    <h3>
-         Ctrl+T(mac), Shift+Ctrl+Alt+T(win)
-    </h3>
-    <h5>
-        1.심볼이나 선택 영역에서 적용 가능한 모든 리팩토링을 표시할 수 있습니다
-        <br>
-        2. 리팩토링 이름 옆의 숫자를 사용하여 원하는 리팩토링을 선택할 수도 있습니다
-        <br>
-        3. 특정 리팩도링의 키보드 단축키가 존재할 경우 해당 단축키가 표시됩니다
-    </h5>
-    <hr>
-    <h3>
-        Shift+Cmd+A(mac), Shift+Ctrl+A(win)
-    </h3>
-    <h5>
-        1. IntelliJ IDEA의 모든 액션을 검색할 수 있습니다
-        <br>
-        2. 액션찾기 창에는 액션뿐만 아니라 단축키도 함께 표시되므로 단축키를 익히고 연습할 수도 있습니다
-        <br>
-        3. 설정도 검색 가능해서 액션찾기 창에서 설정을 바로 변경할 수 있습니다
-        <br>
-        4. 도구 창 검색 및 열기도 지원됩니다
-    </h5>
-    <hr>
-    <h3>
-        Tap Shift Twice
-    </h3>
-    <h5>
-        1. Shift를 두 번 누르면 무엇이든 검색 가능한 검색 창이 표시됩니다
-        <br>
-        2. 액션 검색과 마찬가지로 검색 창에서 설정을 변경할 수 있고 명령어도 지원합니다
-        <br>
-        3. 기본적으로 최근 파일이 표시되므로 Cmd+E 대신 이 창을 활용할 수 있습니다
-        <br>
-        4. 검색어를 입력하면 클래스, 파일, 심볼 및 액션의 검색 결과가 모두 표시됩니다
-    </h5>
-</div>
+<div class="wrap">
+    <header class="header"><h2>Intellij IDEA 단축키 15가지</h2></header>
+    
+ 
+
+    <div class = "content">
+    <table border="1">
+        <caption><h2>Intellij IDEA 단축키 15가지</h2></caption>
+        <thead></thead>
+        <tbody>
+        <tr>
+            <td> 1 </td>
+            <td>Alt + Enter</td>
+            <td>오류 수정 제안</td>
+        </tr>
+        <tr>
+            <td> 2 </td>
+            <td>F2</td>
+            <td>오류 탐색</td>
+        </tr>
+        <tr>
+            <td> 3 </td>
+            <td>Cmd+1(mac), Alt+1(win)</td>
+            <td>프로젝트 창 열기</td>
+        </tr>
+        <tr>
+            <td> 4 </td>
+            <td>Esc</td>
+            <td>편집기로 이동</td>
+        </tr>
+        <tr>
+            <td> 5 </td>
+            <td>Cmd+E(mac), Ctrl+E(win)</td>
+            <td>최근 파일 보기</td>
+        </tr>
+        <tr>
+            <td> 6 </td>
+            <td>Cmd+B(mac), Ctrl+B(win)</td>
+            <td>기호 선언 참조</td>
+        </tr>
+        <tr>
+            <td> 7 </td>
+            <td>Alt + F7</td>
+            <td>사용법 참조</td>
+        </tr>
+        <tr>
+            <td> 8 </td>
+            <td>Tap Ctrl Twice</td>
+            <td>실행 구성 검색</td>
+        </tr>
+        <tr>
+            <td> 9 </td>
+            <td>Ctrl+W, Ctrl+Shift+W(win)</td>
+            <td>선택 영역 확장 / 닫기</td>
+        </tr>
+        <tr>
+            <td> 10 </td>
+            <td>Cmd+/(mac), Ctrl+/(win)</td>
+            <td>주석 처리</td>
+        </tr>
+        <tr>
+            <td> 11 </td>
+            <td>Shift+Cmd+Enter(mac), Shift+Ctrl+Enter(win)</td>
+            <td>자동 입력</td>
+        </tr>
+        <tr>
+            <td> 12 </td>
+            <td>Alt+Cmd+L(mac), Ctrl+Alt+L(win)</td>
+            <td>서식 지정</td>
+        </tr>
+        <tr>
+            <td> 13 </td>
+            <td>Ctrl+T(mac), Shift+Ctrl+Alt+T(win)</td>
+            <td>리팩토링</td>
+        </tr>
+        <tr>
+            <td> 14 </td>
+            <td>Ctrl+T(mac), Shift+Ctrl+Alt+T(win)</td>
+            <td>액션 찾기</td>
+        </tr>
+        <tr>
+            <td>15. </td>
+            <td>Tap Shift Twice</td>
+            <td>검색창 표시</td>
+        </tr>
+    </tbody>
+    </table>
+        <dl>
+        <dt><b> Alt + Enter </b></dt>
+        <dd>Alt+ Enter 키보드 단축키를 사용하면 오류, 경고, 제안 등 무엇이든 수정할 수 있습니다</dd>
+        <br><br><br>
+        <dt><b> F2 </b></dt> 
+        <dd>F2를 활용해 손쉽게 다음 오류, 경고, 제안으로 이동할 수 있습니다</dd>   
+        <br><br><br>
+        <dt><b> Cmd+1(mac), Alt+1(win) </b></dt> 
+        <dd>프로젝트 창을 열고 방향키를 사용해 트리를 탐색할 수 있습니다</dd>
+        <br><br><br>
+        <dt><b> ESC </b></dt> 
+        <dd>변경 사항을 적용하지 않고 모든 팝업을 닫습니다</dd>
+        <br><br><br>
+        <dt><b> Cmd+E(mac), Ctrl+E(win) </b></dt> 
+        <dd>최근 파일 대화상자가 열려 방향키로 파일을 탐색할 수 있습니다</dd>
+        <br><br><br>
+        <dt><b> Cmd+B(mac), Ctrl+B(win) </b></dt> 
+        <dd>심볼의 선언으로 이동할 수 있습니다</dd>
+        <br><br><br>
+        <dt><b>  Alt + F7 </b></dt> 
+        <dd>해당 변수명의 모든 사용 위치가 검색창에 표시됩니다</dd>
+        <br><br><br>
+        <dt><b> Tap Ctrl Twice </b></dt> 
+        <dd>최근 실행한 실행 구성 목록이 표시되는 Run Anything 창이 열립니다 </dd>
+        <br><br><br>
+        <dt><b> Ctrl+W, Ctrl+Shift+W(win) </b></dt> 
+        <dd>커서 주변의 코드 섹션을 확장하거나 축소할 수 있습니다 </dd>
+        <br><br><br>
+        <dt><b> Cmd+/(mac), Ctrl+/(win) </b></dt> 
+        <dd>줄 어디서든 코드를 간편하게 줄 주석으로 처리됩니다 </dd>
+        <br><br><br>
+        <dt><b> Shift+Cmd+Enter(mac), Shift+Ctrl+Enter(win) </b></dt> 
+        <dd>세미콜론을 추가하거나 for문, if문에 구문을 완성시킵니다 </dd>
+        <br><br><br>
+        <dt><b> Alt+Cmd+L(mac), Ctrl+Alt+L(win) </b></dt> 
+        <dd> 현재 파일의 서식을 프로젝트 표준에 맞출 수 있습니다 </dd>
+        <br><br><br>
+        <dt><b> Ctrl+T(mac), Shift+Ctrl+Alt+T(win) </b></dt> 
+        <dd> 심볼이나 선택 영역에서 적용 가능한 모든 리팩토링을 표시할 수 있습니다 </dd>
+        <br><br><br>
+        <dt><b> Shift+Cmd+A(mac), Shift+Ctrl+A(win) </b></dt> 
+        <dd> IntelliJ IDEA의 모든 액션을 검색할 수 있습니다 </dd>
+        <br><br><br>
+        <dt><b> Tap Shift Twice </b></dt> 
+        <dd> 무엇이든 검색 가능한 검색 창이 표시됩니다 </dd>
+    </dl>
+    </div>
 </body>
 </html>

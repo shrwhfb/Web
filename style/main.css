@@ -1,0 +1,41 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple; text-decoration: none;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    height: 10%;
+    padding: 1em;
+    background-color: #84f08d;
+}
+
+
+.content
+{
+    display: flex;
+    flex: 1;
+}
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        
+        label{
+            font-size: 1.2rem;
+            font-weight: 600;
+
+        }
+
+        button{
+            background-color: white;
+            border-radius: 5px;
+            border-width: 1px;
+        }
+
+    </style>
+
+<body>
+
+<h1>프론트엔드 개발자 지원서 </h1>
+<br>
+<p>HTML, CSS, JAVASCRIPT에 대한 기술적 이해와 많은 경험이 있는 분을 찾습니다.</p>
+<br>
+<hr> 
+<fieldset>
+    <legend>입사지원서</legend>
+    <form>
+    <label>개인정보</label>
+    <ul>
+        <li> 이름 <input  type="text" name=이름 > </li>
+        <li> 연락처 <input  type="text" name=연락처 > </li>
+        <li> 학과 
+            <select>
+                <optgroup label="공과대학">
+                    <option value="컴퓨터공학과">컴퓨터공학과</option>
+                </optgroup>
+
+                <optgroup label="사범대학">
+                    <option value="컴퓨터교육과">컴퓨터교육과</option>
+                </optgroup>
+
+                <optgroup label="자연대학">
+                    <option value="전산통계학과">전산통계학과</option>
+                </optgroup>
+            </select>
+        </li>
+    </ul>    
+
+    <label>지원 분야</label>
+    <ul>
+    <li> <input type="radio" name="category" value="웹 퍼블리싱">웹 퍼블리싱 </li>
+    <li> <input type="radio" name="category" value="웹 어플리케이션">웹 어플리케이션 </li>
+    <li> <input type="radio" name="category" value="웹 개발 지원">웹 개발 지원 </li>
+    </ul>
+
+    <label>지원 동기</label>
+    <br><br>
+    <textarea name="message" rows="10" cols="50" placeholder="지원동기를 작성해주세요."></textarea>
+    <br><br>
+    <button type="button" onclick="alert('지원서가 제출되었습니다.')">접수하기</button>
+    <button type="reset">다시작성</button>
+
+    </form>
+</fieldset>    
+</body>
+</html>

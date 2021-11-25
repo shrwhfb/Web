@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>2017108252 권영기</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%; /* 960px;*/
+    height:  120px;
+    background-color: #066cfa;
+  
+    
+}
+aside{
+   width: 100%; /* 300px;*/
+   height: 400px;
+   background-color: #00ff90;
+   padding: 15px;
+
+
+}
+content{
+   width: 100%; /* 600px;*/
+   height: 400px;
+   background-color: #ffd800;
+   padding: 15px;
+   box-sizing: border-box;
+   
+
+}
+
+footer{
+    /* width: 960px;*/
+   height: 120px;
+   background-color: #c3590a;
+   box-sizing: border-box;
+   border-top: 1px solid black;
+
+}
+@media all and (min-width: 1025px){
+   header, footer{
+       width: 100%;
+       height: 10%;
+   } 
+   .content{
+       float: left;
+       width: 60%;
+       height: 80%;
+    }
+    .aside{
+        float:left;
+        width: 40%;
+        height: 80%;
+    }
+
+}
+
+@media all and (min-width: 768px){
+   header, footer{
+       width: 100%;
+       height: 10%;
+       box-sizing: border-box;
+   } 
+   .content{
+       float: left;
+       width: 50%;
+       height: 80%;
+    }
+    .aside{
+        float:left;
+        width: 50%;
+        height: 80%;
+    }
+
+}
+
+@media all and (max-width: 768px){
+   header, content, aside, footer{
+       width: 100%;
+       height: 10%;
+       box-sizing: border-box;
+   } 
+
+}
+
+</style>
+
+
+<body>
+    <div id="wrapper">
+
+        <header>
+           <h1>header</h1>
+        </header>
+        <content class="content">   
+            <h1>본문</h1>
+        </content>
+
+        <aside class="aside">
+            <h1>사이드바</h1>
+        </aside>
+
+        <footer>
+            <h1>푸터</h1>
+        </footer>
+
+    
+    </div>
+    
+    
+  
+</body>
+</html>

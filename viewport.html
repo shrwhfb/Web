@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width">
+    <title> Responsive </title>
+</head>
+  <style type="text/css" media="screen and (max-width: 639px)">
+    body { background-color: #FFA07A}
+  </style>
+  
+  <style type="text/css" media="screen and (min-width: 640px)">
+    body { background-color: #20B2AA}
+  </style>
+  
+  <style type="text/css" media="screen and (min-width: 1025px)">
+    body { background-color: #87CEFA}
+  </style>
+
+  <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            display:  flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        
+
+      </style>
+<body>
+    <div class="wrapper">
+        <pre>
+            640px 미만은 #FFA07A
+            640px 이상은 #20B2AA
+            1025px 이상은 #87CEFA
+       </pre>
+   </div>
+</body>
+</html>

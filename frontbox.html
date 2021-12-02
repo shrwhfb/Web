@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+    <title> 2017108252 권영기 </title>
+</head>
+<style>
+:root{
+    --color1:#CCCCFF;
+    --color2:#6495ED;
+    --color3:#4BE0D0;
+    --color4:#9FE2BF;
+    --color5:#DE3163;
+    --color6:#FF7F50;
+    --color7:#FFBF00;
+}
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+
+    body{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .wrapper{
+        width: 300px;
+        height: 200px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        animation: ani 5s linear infinite;
+
+    }
+  
+    @keyframes ani {
+        0%{
+            transform: rotateY(0deg) rotateX();
+        }
+    }
+    .front {
+        padding: 15px;
+        border: 5px solid white;
+        border-radius: 10px;
+        
+       
+    }
+    .front:hover{
+        box-shadow: 5px 5px 10px 0 var(--color2),
+        10px 10px 0 var(--color3),
+        15px 15px 0 var(--color4)
+    }
+
+    
+
+
+</style> 
+
+<body>
+    
+<div class="wrapper">
+    <div class="front"> front </div>
+</div>
+
+   
+</body>
+</html>

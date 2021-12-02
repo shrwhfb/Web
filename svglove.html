@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+    <title> 2017108252 권영기 </title>
+</head>
+<style>
+:root{
+    --color1:#CCCCFF;
+    --color2:#6495ED;
+    --color3:#4BE0D0;
+    --color4:#9FE2BF;
+    --color5:#DE3163;
+    --color6:#FF7F50;
+    --color7:#FFBF00;
+}
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+
+    body{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .wrapper{
+        width: 300px;
+        height: 200px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .wrapper path {
+        
+        stroke-dasharray: 54;
+        stroke-dashoffset: 54;
+        transition: 2s;
+        fill: var(--color1);
+        stroke-width: 1;
+    }
+
+    .wrapper path.like{
+        animation: like 1s linear forwards,
+        heart-beat 0.5s ease-in-out 1s 2;
+        transform-origin: center;
+    }
+
+    @keyframes heart-beat{
+        0%, 100%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(0.9);
+        }
+    }
+    .wrapper path.unlike{
+        animation: unlike 1s linear forwards;
+    }
+    @keyframes like{
+        75%{
+            fill:var(--color1);
+        }
+        100%{
+            stroke-dashoffset: 0;
+            stroke: var(--color5);
+            fill:var(--color5);
+        }
+    }
+    .wrapper path.unlike{
+        animation: unlike 1s linear forwards;
+    }
+    @keyframes unlike{
+        from{
+            stroke-dashoffset: 0;
+            stroke: var(--color1);
+            fill:var(--color5);
+        }
+        to{
+            stroke-dashoffset: 54;
+            stroke: black;
+            fill: var(--color1);
+        }
+    }
+/*  .wrapper svg:hover path {
+        stroke-dashoffset: 0;
+    }
+*/
+  
+   
+
+</style> 
+
+<body>
+    
+<div class="wrapper">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+       
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+    </svg>
+    
+   
+</div>
+<script>
+    function toggle(e) {
+        const target = e.target;
+        if (target.classList.contains('like')) {
+            target.classList.add('unlike');
+            target.classList.remove('like');
+      } else {
+            target.classList.add('like');
+            target.classList.remove('unlike');
+      }
+    }
+    document.querySelectorAll('#heart')[0].addEventListener('click', toggle);
+  
+   </script>
+
+   
+</body>
+</html>
